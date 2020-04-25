@@ -7,30 +7,43 @@ if(empty($cekNim)){
 $query = mysqli_query($koneksi, "select * from mahasiswa where nim=$cekNim");
 $row = mysqli_fetch_array($query);
 ?>
-
-<h1>Edit</h1>
-<form method="post">
-    <table>
-        <tr>
-            <td><label>Nama lengkap</label></td>
-            <td>:</td>
-            <td><input type="text" name="nama" value="<?=$row['nama_lengkap']?>"></td>
-        </tr>
-        <tr>
-            <td><label>Kota</label></td>
-            <td>:</td>
-            <td><input type="text" name="kota" value="<?=$row['kota']?>"></td>
-        </tr>
-        <tr>
-            <td><label>TTL</label></td>
-            <td>:</td>
-            <td><input type="date" name="ttl" value="<?=$row['ttl']?>"></td>
-        </tr>
-        <tr>
-            <td><input type="submit" value="Perbarui data" name="submit"></td>
-        </tr>
-    </table>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/f52e226df8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Daftar Mahasiswa - LatihanAja</title>
+    </head>
+    <body>
+    <div class="container mt-2">
+    <a class="badge badge-primary mb-2" href="index.php"> < Kembali</a>
+    <h1>Edit</h1>
+    <form method="post">
+    <div class="row">
+        <div class="col-5">
+            <div class="form-group">
+                <label>Nama lengkap</label>
+                <input type="text" class="form-control" value="<?=$row['nama_lengkap']?>" name="nama">
+            </div>
+            <div class="form-group">
+                <label>Kota</label>
+                <input type="text" class="form-control" value="<?=$row['kota']?>" name="kota">
+            </div>
+            <div class="form-group">
+                <label>TTL</label>
+                <input type="date" class="form-control" value="<?=$row['ttl']?>" name="ttl">
+            </div>
+            <input type="submit" value="Perbarui data" class="btn btn-primary form-control" name="submit">
+        </div>
+    </div>
+    </form>
+    </div>
+    </body>
+    <script src="assets/js/bootstrap.min.js"></script>
+</html>
 <?php
 if(isset($_POST['submit'])){
     $nim = (int)$cekNim;
