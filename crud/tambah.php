@@ -1,7 +1,6 @@
 <?php
 require_once "koneksi.php";
 ?>
-
 <h1>Tambah Mahasiswa</h1>
 <form method="post">
     <table>
