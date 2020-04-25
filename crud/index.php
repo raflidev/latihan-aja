@@ -16,7 +16,9 @@ $query = mysqli_query($koneksi,"select * from mahasiswa");
     <body>
     <div class="container mt-2">
         <h1>Daftar Mahasiswa</h1>
-        <a class="btn btn-primary" href="tambah.php">Tambah Mahasiswa</a>
+        <a class="btn btn-primary" href="tambah.php">
+        <i class="fas fa-plus-square"> </i> Tambah Mahasiswa
+        </a>
         <br><br>
             <table class="table table-striped">
                 <tr>

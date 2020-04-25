@@ -9,11 +9,16 @@ require_once "koneksi.php";
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <script src="https://kit.fontawesome.com/f52e226df8.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Daftar Mahasiswa - LatihanAja</title>
+        <title>Tambah Mahasiswa - LatihanAja</title>
     </head>
     <body>
     <div class="container mt-2">
-    <h1>Tambah Mahasiswa</h1>
+    <h1>
+    <a class="btn btn-secondary mb-2" href="index.php">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+    Tambah Mahasiswa
+    </h1>
     <form method="post">
     <div class="row">
         <div class="col-5">
