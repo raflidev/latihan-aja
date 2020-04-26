@@ -27,7 +27,7 @@ $row = mysqli_fetch_array($query);
     Edit Mahasiswa</h1>
     <form method="post">
     <div class="row">
-        <div class="col-5">
+        <div class="col-lg-5">
             <div class="form-group">
                 <label>Nama lengkap</label>
                 <input type="text" class="form-control" value="<?=$row['nama_lengkap']?>" name="nama">

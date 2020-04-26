@@ -21,7 +21,7 @@ require_once "koneksi.php";
     </h1>
     <form method="post">
     <div class="row">
-        <div class="col-5">
+        <div class="col-lg-5">
             <div class="form-group">
                 <label>NIM</label>
                 <input type="number" class="form-control" name="nim">
