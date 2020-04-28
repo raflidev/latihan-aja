@@ -9,7 +9,7 @@ $query = mysqli_query($koneksi,"select * from mahasiswa");
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <script src="https://kit.fontawesome.com/f52e226df8.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/f52e226df8.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Daftar Mahasiswa - LatihanAja</title>
     </head>
