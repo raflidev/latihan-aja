@@ -10,6 +10,8 @@ $abjad = ["A","B","C",["D","E",["F","G","H"]],"I"];
      //  [ 0 , 1 , 2 ,[ 0 , 1 ,[ 0 , 1 , 2 ]], 4 ]
 echo $abjad[0].$abjad[3][2][2];
 // AH
-
+echo "<pre>";
+print_r($abjad);
+echo "</pre>";
 ?>
 
